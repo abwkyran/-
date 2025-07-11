@@ -19,7 +19,7 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: 17
-
+          
       - name: Grant permission to execute gradlew
         run: chmod +x ./project/gradlew
 
