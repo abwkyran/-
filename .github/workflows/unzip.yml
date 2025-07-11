@@ -1,0 +1,18 @@
+name: Unzip Project
+
+on:
+  workflow_dispatch:
+
+jobs:
+  unzip:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Install unzip
+        run: sudo apt-get install unzip
+
+      - name: Unzip file
+        run: unzip AbukyranAl3shari.zip -d .
